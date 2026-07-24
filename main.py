@@ -22,7 +22,7 @@ async def ola(ctx):
 
 @bot.event
 async def on_presence_update(before, after):
-     print("Evento disparou!")
+    print("Evento disparou!")
     # Ignora qualquer outro usuário
     if after.id != CHINA_ID:
         return
