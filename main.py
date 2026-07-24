@@ -7,8 +7,8 @@ bot = commands.Bot(".", intents=intents)
 
 
 TOKEN = os.getenv("TOKEN")
-CHINA_ID = os.getenv("CHINA_ID")
-CANAL_ID = os.getenv("CANAL_ID")
+CHINA_ID = int(os.getenv("CHINA_ID"))
+CANAL_ID = int(os.getenv("CANAL_ID"))
 
 @bot.event
 async def on_ready():
