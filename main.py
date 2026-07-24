@@ -44,4 +44,4 @@ async def on_presence_update(before, after):
         await canal.send(f"{after.display_name} sumiu!")
         # await canal.send(f"⚫ {after.display_name} ficou offline!")
 
-bot.run("TOKEN")
+bot.run(TOKEN)
