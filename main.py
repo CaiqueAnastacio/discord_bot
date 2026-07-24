@@ -25,7 +25,7 @@ async def on_presence_update(before, after):
     print("Evento disparou!")
     # Ignora qualquer outro usuário
     if after.id != CHINA_ID:
-        print("not china!")
+        print(f"not china! >>> {CHINA_ID} - {type(CHINA_ID)}")
         return
 
     # Ignora se o status não mudou
